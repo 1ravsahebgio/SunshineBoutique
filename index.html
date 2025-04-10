@@ -1,0 +1,72 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sunshine Boutique</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <div class="welcome-container">
+            <h1 class="welcome-heading">
+                <span id="welcome-text">Welcome to</span>
+                <span id="brand-name">Sunshine Boutique</span>
+            </h1>
+        </div>
+
+        <nav>
+            <a href="index.html"><button class="button-home">Home</button></a>
+            <a href="about.html"><button class="button-home">About</button></a>
+            <a href="services.html"><button class="button-home">Products</button></a>
+            <a href="contact.html"><button class="button-home">Contact</button></a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Stylish and Unique Clothing</h2>
+            <p>Discover our latest collection of handmade designs.</p>
+            <section class="gallery">
+                <h2>Our Latest Designs</h2>
+                <div class="gallery-container">
+                    <img src="blue-suite.jpg" alt="Design 1">
+                    <img src="car.jpg" alt="Design 2">
+                    <img src="style.jpg" alt="Design 3">
+                    <img src="black-car.jpg" alt="Design 4">
+                    <img src="black-suite.jpg" alt="Design 2">
+                    <img src="white.jpg" alt="Design 3">
+                </div>
+            </section>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Sunshine Boutique</p>
+    </footer>
+    <script src="script.js"></script>
+
+    <!-- <script>
+        setTimeout(() => {
+            document.getElementById('welcome-text').style.opacity = '0';
+        }, 4000);
+    </script> -->
+
+    <script>
+        setTimeout(() => {
+            const welcome = document.getElementById('welcome-text');
+            welcome.style.opacity = '0';
+            setTimeout(() => {
+                welcome.style.display = 'none'; // pura hat jaye DOM se
+            }, 200); // wait for opacity transition
+        }, 3000);
+    </script>
+
+
+</body>
+
+</html>
